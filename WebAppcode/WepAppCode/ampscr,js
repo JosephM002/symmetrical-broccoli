@@ -1,0 +1,13 @@
+var amphibians = ["Frog","Newt","Salamander","Axolotl"];
+
+for (var i = 0; i < amphibians.length; i++){
+    setText("amp"+i,amphibians[i]);
+}
+
+function frogcorrect(){
+    setScreen("frogFact.html");
+}
+
+onEvent("amp1", "click", function( ) {
+         frogcorrect();
+});
